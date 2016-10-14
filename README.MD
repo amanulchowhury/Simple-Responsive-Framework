@@ -7,7 +7,8 @@
  - Column from col-1 to col-12.
  - Responsive images.
  - Single Break point at 700px.
-#####Future
+ 
+##### Future
  - Add more breakpoints.
  - Convert to SASS
  - Modularize.
