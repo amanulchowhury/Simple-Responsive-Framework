@@ -6,6 +6,8 @@
     font-family: 'Lato', sans-serif;
     color: #747704;
     font-weight: 300;
+    line-height: 1.8rem;
+    word-break: normal;
 }
 
 img {
@@ -13,12 +15,50 @@ img {
     max-width: 100%;
 }
 
+ol {
+    list-style: none;
+}
+
+ol  li:before {
+    content: '-';
+}
+
 .app-logo {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin-top: 8px;
-    background: url("../images/app.png") round;
+    width: 50px;
+    height: 50px;
+    margin-top: 28px;
+    float: left;
+    background: url("../images/code.jpg") round;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    top: 0;
+    left: 0;
+}
+
+.page-title {
+    border-bottom: 2px solid #BCBBBB;
+    padding-bottom: 15px;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+.page-title h1, h4 {
+    margin-bottom: 0;
+}
+
+.page-title h4 {
+    margin-top: 2px;
+}
+
+.main-content {
+    margin-top: 8rem;
+    overflow: auto;
 }
 
 .hero {
@@ -43,10 +83,13 @@ img {
 [class^=col-] {
     padding: 2px;
     width: 100%;
-    word-break: break-all;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
+    .nav {
+        padding: 12px 72px;
+    }
+
     .container {
         padding: 12px 72px;
     }
@@ -119,20 +162,6 @@ img {
     text-align: center;
 }
 
-.page-title {
-    border-bottom: 2px solid #BCBBBB;
-    padding-bottom: 15px;
-    margin-bottom: 24px;
-}
-
-.page-title h1, h4 {
-    margin-bottom: 0;
-}
-
-.page-title h4 {
-    margin-top: 2px;
-}
-
 .text-thin {
     font-weight: 100;
 }
@@ -146,7 +175,8 @@ img {
 }
 
 .thumbnail img {
-    margin: 0 auto;
+    height: 180px;
+    width: 100%;
 }
 
 .thumbnail .title,
