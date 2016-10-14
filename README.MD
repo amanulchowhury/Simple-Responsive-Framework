@@ -1,4 +1,5 @@
-##A simple responsive CSS Framework.
+A simple responsive CSS Framework
+==================================
 
 #### A simple responsive CSS Framework.
  - Mobile-First.
